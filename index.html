@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/profile_pic.png">
+</head>
+<body>
+    <nav id="desktop_nav">
+        <div class="nav_logo">Abrar's Space</div>
+        <div class="nav_menu_links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger_nav">
+        <div class="nav_logo">Abrar's Space</div>
+        <div class="hamburger_menu">
+            <div class="hamburger_menu_icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hamburger_menu_links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile_contents_container">
+            <div class="profile_pic_container"><img src="/images/profile_pic.png"></div>
+            <div class="profile_text_container">
+                <p class="p1">Hey, I'm</p>
+                <h1 class="name">Abrar</h1>
+                <p class="p2">Aspiring SDE</p>
+                <div class="button_containers">
+                    <button onclick="window.open()">Resume</button>
+                </div>
+                <div class="social_containers">
+                    <a href="https://www.linkedin.com/in/md-abrar-al-zabir-9776ba201/" target="_blank"><img src="/images/linkedin.png"></a>
+                    <a href="https://github.com/ClosetCoderSad" target="_blank"><img src="/images/github.png"></a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section id="about">
+        <p>Get To Know More</p>
+        <h1>About Me</h1>
+        <div class="about_contents_container">
+            <div class="about_pic_container"><img src="/images/aboutpic.jpg"></div>
+            <div class="about_details_container">
+                <div class="about_box_containers">
+                    <div class="Education">
+                        <img src="/images/experience.png">
+                        <h2>Education</h2>
+                        <h3>B.Sc. Computer Science</h3>
+                        <p>The University of Texas at Dallas</p>
+                        <h3>International A levels</h3>
+                        <p>Maple Leaf International School</p>
+                        <h3>International GCSEs</h3>
+                        <p>Maple Leaf International School</p>
+                    </div>
+                </div>
+                <div class="about_text_container">
+                    <p>Hello, my name is Abrar Al Zabir. I'm 19 years old and from Bangladesh. I'm an incoming CS freshman at the University of Texas at Dallas. My interests lie in Computer Science, Artificial Intelligence, and Machine Learning.</p>     
+                </div>
+            </div>
+        </div>
+        <img class="arrow" src="/images/arrow.png" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p>Explore My</p>
+        <h1>Experience</h1>
+        <div class="experience_contents_container">
+            <h2>Programming Skillset</h2>
+            <div class="experience_details_container">               
+                <article>
+                    <img src="/images/python.png">
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                </article>
+                <article>
+                    <img src="/images/html.png">
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </article>
+                <article>
+                    <img src="/images/css.png">
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                </article>
+                <article>
+                    <img src="/images/javascript.png">
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                </article>
+            </div>
+        </div>
+        <img class="arrow" src="/images/arrow.png" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p>Check Out My Recent</p>
+        <h1>Projects</h1>
+        <div class="project_contents_container">
+            <div class="project_about_container">
+                <div class="project">
+                    <div class="project_details_container">
+                        <img src="/images/opencvv.jpeg">
+                        <h2>Virtual Hands-free Mouse</h2>
+                        <div class="button_containers">
+                            <button onclick="location.href='//github.com/ClosetCoderSad/AI_Assistant_Mouse'">GitHub</button>
+                            <button>Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="project_about_container">
+                <div class="project">
+                    <div class="project_details_container">
+                        <img src="/images/tictactoee.PNG">
+                        <h2>Tic-Tac-Toe</h2>
+                        <div class="button_containers">
+                            <button onclick="location.href='//github.com/ClosetCoderSad/Tic-Tac-Toe-Game'">GitHub</button>
+                            <button>Live Demo</button>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        <img class="arrow" src="/images/arrow.png" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p>Connect with</p>
+        <h1>Me</h1>
+        <div class="contact_contents_container">
+            <div class="contact_about_container">
+                <div class="contact_details_container">
+                    <a href="mailto:abrarroll2@gmail.com" target="_blank"><img src="/images/gmailicon.png"></a>
+                    <p>abrarroll2@gmail.com</p>
+                </div>
+                <div class="contact_details_container">
+                    <a href="https://www.linkedin.com/in/md-abrar-al-zabir-9776ba201/" target="_blank"><img src="/images/linkedin_2.png"></a>
+                    <p>Md Abrar Al Zabir</p>
+                </div>
+                <div class="contact_details_container">
+                    <a href="https://www.instagram.com/ab.rark/" target="_blank"><img src="/images/instagram_icon.png"></a>
+                    <p>ab.rark</p>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <div class="footer_contents_container">
+            <p>Copyright &#169 2024 Abrar Al Zabir. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
