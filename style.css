@@ -70,7 +70,7 @@ body{
     background-color: black;
     transition: all 0.3 ease-in-out;
 }
-.hamburger_menu_links{
+.hamburger_menu_links ul{
     position: absolute;
     top: 100%;
     right: 0;
@@ -80,7 +80,7 @@ body{
     overflow: hidden;
     transition: all 0.3 ease-in-out;
 }
-.hamburger_menu_links a{
+.hamburger_menu_links ul a{
     display: block;
     padding: 10px;
     text-align: center;
@@ -89,16 +89,16 @@ body{
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
-.hamburger_menu_links li{
+.hamburger_menu_links ul li{
     list-style: none;
 }
-.hamburger_menu_links.open{
+.hamburger_menu_links ul.open{
     max-height: 300px;
 }
 .hamburger_menu_icon.open span:first-child{
     transform: rotate(45deg) translate(10px, 5px);
 }
-.hamburger_menu_icon.open span:nth-child(2){
+.hamburger_menu_icon ul.open span:nth-child(2){
     opacity: 0;
 }
 .hamburger_menu_icon.open span:last-child{
