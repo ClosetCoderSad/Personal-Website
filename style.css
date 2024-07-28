@@ -95,13 +95,13 @@ body{
 .hamburger_menu_links.open{
     max-height: 300px;
 }
-.hamburger_menu_links.open span:first-child{
+.hamburger_menu_icon.open span:first-child{
     transform: rotate(45deg) translate(10px, 5px);
 }
-.hamburger_menu_links.open span:nth-child(2){
+.hamburger_menu_icon.open span:nth-child(2){
     opacity: 0;
 }
-.hamburger_menu_links.open span:last-child{
+.hamburger_menu_icon.open span:last-child{
     transform: rotate(-45deg) translate(10px, -5px);
 }
 .hamburger_menu_icon span:first-child{
